@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+
+
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <!--    引入外部配置文件-->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <!--  配置数据源   德鲁伊-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${jdbc_driver}"/>
+        <property name="url" value="${jdbc_url}"/>
+        <property name="username" value="${jdbc_username}"/>
+        <property name="password" value="${jdbc_password}"/>
+        <property name="maxActive" value="${jdbc_maxActive}"/>
+        <property name="initialSize" value="${jdbc_initialSize}"/>
+    </bean>
+
+    <!--数据库实务管理-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!--       管理的数据源-->
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+    <!--    &lt;!&ndash;    xml配置事务管理&ndash;&gt;
+        <tx:advice id="transactionInterceptor" transaction-manager="transactionManager">
+            <tx:attributes>
+                <tx:method name="%add%" isolation="DEFAULT" propagation="REQUIRED"/>
+                <tx:method name="%update%" isolation="DEFAULT" propagation="REQUIRED"/>
+                <tx:method name="%delete%" propagation="REQUIRED" isolation="DEFAULT"/>
+            </tx:attributes>
+        </tx:advice>-->
+
+    <!--session工厂-->
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" autowire="byName">
+        <!--        配置数据源-->
+        <property name="dataSource" ref="dataSource"/>
+        <!--        配置mybatis核心配置文件位置-->
+        <property name="configLocation" value="classpath:mybatisConfig.xml"/>
+    </bean>
+
+    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate" autowire="byName">
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+        <constructor-arg value="SIMPLE"/>
+    </bean>
+
+
+
+    <bean id="bookstoreMapper"  class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="mapperInterface" value="com.gavin.mapper.BookstoreMapper"/>
+        <property name="sqlSessionTemplate" ref="sqlSessionTemplate"/>
+    </bean>
+<!--    &lt;!&ndash;    通过MapperScannerConfigurer的配置方式&ndash;&gt;
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.gavin.mapper"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+
+    </bean>-->
+    <!--扫描注解-->
+    <context:component-scan base-package="com.gavin"/>
+
+    <!--    <bean id="controllerDemo" class="com.gavin.controller.ControllerDemo" autowire="byName"/>-->
+    <!--    <bean class="org.springframework.web.servlet.DispatcherServlet"/>-->
+    <!--    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>-->
+    <!--    <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>-->
+    <!--    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+    <!--        &lt;!&ndash;<property name="prefix" value="/WEB-INF/" />-->
+    <!--        <property name="suffix" value=".jsp"/>&ndash;&gt;-->
+    <!--    </bean>-->
+
+</beans>
