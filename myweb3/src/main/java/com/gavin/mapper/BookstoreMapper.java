@@ -8,5 +8,7 @@ public interface BookstoreMapper {
 
     Bookstore selectByBookId(Integer bookid);
 
+    int insertBookselective(Bookstore bookstore);
+
 
 }

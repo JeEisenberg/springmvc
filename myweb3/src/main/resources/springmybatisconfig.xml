@@ -26,51 +26,42 @@
         <property name="dataSource" ref="dataSource"/>
     </bean>
     <tx:annotation-driven transaction-manager="transactionManager"/>
-    <!--    &lt;!&ndash;    xml配置事务管理&ndash;&gt;
-        <tx:advice id="transactionInterceptor" transaction-manager="transactionManager">
-            <tx:attributes>
-                <tx:method name="%add%" isolation="DEFAULT" propagation="REQUIRED"/>
-                <tx:method name="%update%" isolation="DEFAULT" propagation="REQUIRED"/>
-                <tx:method name="%delete%" propagation="REQUIRED" isolation="DEFAULT"/>
-            </tx:attributes>
-        </tx:advice>-->
-
-    <!--session工厂-->
-
-    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" autowire="byName">
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <!--        配置数据源-->
         <property name="dataSource" ref="dataSource"/>
         <!--        配置mybatis核心配置文件位置-->
         <property name="configLocation" value="classpath:mybatisConfig.xml"/>
     </bean>
 
-    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate" autowire="byName">
+    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg index="0" ref="sqlSessionFactory"/>
         <constructor-arg value="SIMPLE"/>
     </bean>
 
 
-
+<!--
     <bean id="bookstoreMapper"  class="org.mybatis.spring.mapper.MapperFactoryBean">
         <property name="mapperInterface" value="com.gavin.mapper.BookstoreMapper"/>
         <property name="sqlSessionTemplate" ref="sqlSessionTemplate"/>
-    </bean>
-<!--    &lt;!&ndash;    通过MapperScannerConfigurer的配置方式&ndash;&gt;
+    </bean>-->
+    <!--    通过MapperScannerConfigurer的配置方式-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.gavin.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
-
-    </bean>-->
+<!--<property name="sqlSessionTemplate" ref="sqlSessionTemplate"/>-->
+    </bean>
     <!--扫描注解-->
     <context:component-scan base-package="com.gavin"/>
 
-    <!--    <bean id="controllerDemo" class="com.gavin.controller.ControllerDemo" autowire="byName"/>-->
-    <!--    <bean class="org.springframework.web.servlet.DispatcherServlet"/>-->
-    <!--    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>-->
-    <!--    <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>-->
-    <!--    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
-    <!--        &lt;!&ndash;<property name="prefix" value="/WEB-INF/" />-->
-    <!--        <property name="suffix" value=".jsp"/>&ndash;&gt;-->
-    <!--    </bean>-->
+       <!-- <bean class="org.springframework.web.servlet.DispatcherServlet"/>
+        <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+        <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
+        <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+            &lt;!&ndash;<property name="prefix" value="/WEB-INF/" />
+            <property name="suffix" value=".jsp"/>&ndash;&gt;
+        </bean>-->
+
+
+
 
 </beans>

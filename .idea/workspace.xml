@@ -6,7 +6,122 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca424f6d-4256-4792-bd9b-119aa0d0f5b6" name="Default Changelist" comment="" />
+    <list default="true" id="ca424f6d-4256-4792-bd9b-119aa0d0f5b6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/myweb3/src/main/java/com/gavin/controller/ControllerDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myweb3/src/main/webapp/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myweb3/src/main/webapp/tyty.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/src/main/java/com/gavin/controller/ControllerDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/src/main/java/com/gavin/mapper/DeptMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/src/main/java/com/gavin/mapper/EmpMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/src/main/java/com/gavin/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/src/main/java/com/gavin/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/src/main/java/com/gavin/pojo/Dept.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/src/main/java/com/gavin/pojo/Emp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/src/main/java/com/gavin/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/src/main/java/com/gavin/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/src/main/resources/com/gavin/mapper/DeptMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/src/main/resources/com/gavin/mapper/EmpMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/src/main/resources/com/gavin/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/src/main/resources/com/gavin/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/src/main/resources/enhance.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/src/main/resources/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/src/main/resources/springmvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/src/main/webapp/HelloWorld.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/src/main/webapp/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/src/test/java/com.gavin.test/TestDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/classes/com/gavin/controller/ControllerDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/classes/com/gavin/mapper/DeptMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/classes/com/gavin/mapper/DeptMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/classes/com/gavin/mapper/EmpMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/classes/com/gavin/mapper/EmpMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/classes/com/gavin/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/classes/com/gavin/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/classes/com/gavin/pojo/Dept.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/classes/com/gavin/pojo/Emp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/classes/com/gavin/pojo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/classes/enhance.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/classes/springmvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/HelloWorld.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/controller/ControllerDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/DeptMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/DeptMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/EmpMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/EmpMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/pojo/Dept.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/pojo/Emp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/pojo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/classes/enhance.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/classes/springmvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.9.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/druid-1.2.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/ehcache-2.10.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/ehcache-core-2.6.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/javax.annotation-api-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/log4j-api-2.15.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/log4j-core-2.15.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.5.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/mybatis-ehcache-1.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/mybatis-enhance-core-1.1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-2.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.27.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-3.11.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/slf4j-nop-1.7.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.2.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.2.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.2.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/spring-context-support-5.2.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.2.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.2.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.2.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.2.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/spring-orm-5.2.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.2.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.2.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.2.18.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/tomcat-annotations-api-9.0.56.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/tomcat-api-9.0.56.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/tomcat-catalina-9.0.56.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/tomcat-coyote-9.0.56.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/tomcat-el-api-9.0.56.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/tomcat-jaspic-api-9.0.56.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/tomcat-jni-9.0.56.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/tomcat-jsp-api-9.0.56.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/tomcat-juli-9.0.56.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/tomcat-servlet-api-9.0.56.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/tomcat-util-9.0.56.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/lib/tomcat-util-scan-9.0.56.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/myweb-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/target/test-classes/com/gavin/test/TestDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb3/src/main/java/com/gavin/controller/ControllerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/src/main/java/com/gavin/controller/ControllerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb3/src/main/java/com/gavin/mapper/BookstoreMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/src/main/java/com/gavin/mapper/BookstoreMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb3/src/main/resources/com/gavin/mapper/BookstoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/src/main/resources/com/gavin/mapper/BookstoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb3/src/main/resources/springmybatisconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/src/main/resources/springmybatisconfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb3/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb3/src/main/webapp/book.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/src/main/webapp/book.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb3/target/classes/com/gavin/controller/ControllerDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/target/classes/com/gavin/controller/ControllerDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb3/target/classes/com/gavin/mapper/BookstoreMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/target/classes/com/gavin/mapper/BookstoreMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb3/target/classes/com/gavin/mapper/BookstoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/target/classes/com/gavin/mapper/BookstoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb3/target/classes/springmybatisconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/target/classes/springmybatisconfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb3/target/myweb3-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/controller/ControllerDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/target/myweb3-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/controller/ControllerDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb3/target/myweb3-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/BookstoreMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/target/myweb3-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/BookstoreMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb3/target/myweb3-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/BookstoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/target/myweb3-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/BookstoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb3/target/myweb3-1.0-SNAPSHOT/WEB-INF/classes/springmybatisconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/target/myweb3-1.0-SNAPSHOT/WEB-INF/classes/springmybatisconfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb3/target/myweb3-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/target/myweb3-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb3/target/myweb3-1.0-SNAPSHOT/book.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/target/myweb3-1.0-SNAPSHOT/book.jsp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +158,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="gavin: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="gavin: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -59,10 +181,14 @@
         <option value="sSpring_mybaicConfig" />
         <option value="log4j" />
         <option value="ehcache" />
-        <option value="Jsp File" />
         <option value="spring-beans.schema" />
+        <option value="Jsp File" />
+        <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -86,22 +212,31 @@
     </option>
   </component>
   <component name="ProjectId" id="22BUVr2N4oqGMmTdhgbdvakD0jp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/myweb3/src/main/webapp" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Program Data\idea2019Data\SompleDemo\myweb3\src\main\webapp" />
+      <recent name="D:\Program Data\idea2019Data\SompleDemo\myweb\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gavin.controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Program Data\idea2019Data\SompleDemo\myweb3\src\main\webapp" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Program Data\idea2019Data\SompleDemo\myweb\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -357,9 +492,6 @@
   <component name="SpringBootOptions">
     <option name="autoCreateRunConfiguration" value="false" />
   </component>
-  <component name="SpringGeneralSettings">
-    <option name="allowAutoConfigurationMode" value="true" />
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -376,12 +508,40 @@
       <workItem from="1639394350557" duration="3727000" />
       <workItem from="1639398628916" duration="3058000" />
       <workItem from="1639453849423" duration="20028000" />
-      <workItem from="1639531745237" duration="12829000" />
+      <workItem from="1639531745237" duration="14937000" />
+      <workItem from="1639646428408" duration="10786000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/myweb3/src/main/java/com/gavin/controller/ControllerDemo1.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SompleDemo$Tomcat_9_0_561.ic" NAME="Tomcat 9.0.561 Coverage Results" MODIFIED="1639540625820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

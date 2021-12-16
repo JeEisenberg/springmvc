@@ -8,10 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="myweb3" />
-        <module name="myweb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
+      <module name="myweb" target="11" />
       <module name="myweb1" target="11" />
       <module name="SpringMybati" target="11" />
     </bytecodeTargetLevel>

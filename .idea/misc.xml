@@ -15,6 +15,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/SpringMybati/pom.xml" />
+        <option value="$PROJECT_DIR$/myweb/pom.xml" />
         <option value="$PROJECT_DIR$/myweb1/pom.xml" />
       </set>
     </option>

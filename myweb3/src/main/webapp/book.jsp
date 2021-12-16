@@ -11,9 +11,13 @@
     <title>Title</title>
 </head>
 <body>
-${bookInfo}
+${bookInfo}</br>
+
+你好</br>
+
+${msg}
 
 
-你好
+${message}
 </body>
 </html>
