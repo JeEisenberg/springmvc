@@ -42,17 +42,8 @@
   <dependencies>
 
 
-    <dependency>
-      <groupId>org.mybatis.caches</groupId>
-      <artifactId>mybatis-ehcache</artifactId>
-      <version>1.0.2</version>
-    </dependency>
 
-    <dependency>
-      <groupId>net.sf.ehcache</groupId>
-      <artifactId>ehcache</artifactId>
-      <version>2.10.1</version>
-    </dependency>
+
 
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -71,15 +62,7 @@
       <artifactId>spring-jdbc</artifactId>
     </dependency>
 
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-web</artifactId>
-    </dependency>
 
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-webmvc</artifactId>
-    </dependency>
 
     <dependency>
       <groupId>org.springframework</groupId>
@@ -190,11 +173,6 @@
       <artifactId>ehcache</artifactId>
     </dependency>
 
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-nop</artifactId>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.jboss/jboss-vfs -->
     <dependency>
       <groupId>org.jboss</groupId>
       <artifactId>jboss-vfs</artifactId>

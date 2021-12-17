@@ -52,8 +52,6 @@ public class ControllerDemo1 {
 
     @RequestMapping(value = "/register.do")
     public String register() {
-
-
         return "register.jsp";
     }
 

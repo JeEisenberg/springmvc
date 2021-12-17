@@ -47,7 +47,7 @@
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
               <option name="primaryKey" value="DEPTNO" />
-              <option name="projectFolder" value="$PROJECT_DIR$/myweb" />
+              <option name="projectFolder" value="$PROJECT_DIR$/myweb2" />
               <option name="tableName" value="dept" />
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
@@ -63,21 +63,20 @@
               <option name="annotationDAO" value="true" />
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="EmpDao" />
+              <option name="daoName" value="EmpMapper" />
               <option name="daoPackage" value="com.gavin.mapper" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="Emp" />
               <option name="modelPackage" value="com.gavin.pojo" />
               <option name="name" value="emp" />
-              <option name="offsetLimit" value="true" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
               <option name="primaryKey" value="EMPNO" />
-              <option name="projectFolder" value="$PROJECT_DIR$/myweb" />
+              <option name="projectFolder" value="$PROJECT_DIR$/myweb2" />
               <option name="tableName" value="emp" />
+              <option name="useActualColumnNames" value="true" />
               <option name="useLombokPlugin" value="true" />
-              <option name="useSchemaPrefix" value="true" />
               <option name="useTableNameAlias" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
               <option name="xmlPackage" value="com.gavin.mapper" />

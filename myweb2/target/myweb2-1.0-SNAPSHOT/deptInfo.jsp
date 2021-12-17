@@ -1,0 +1,71 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page import="com.gavin.pojo.Emp" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.ArrayList" %>
+
+<html>
+<head>
+    <title>欢迎使用员工管理系统</title>
+    <style type="text/css">
+        table {
+            border: 4px solid black;
+            width: 70%;
+
+            margin: 0px auto;
+            mso-cellspacing: 0px;
+        }
+
+        td {
+            border: 2px solid black;
+
+        }
+
+        th {
+            border: 2px solid black;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<div>
+    <table cellpadding="0px" cellspacing="0px">
+
+        <tr>
+            <th>部门号</th>
+            <th>员工号</th>
+            <th>员工姓名</th>
+            <th>职位</th>
+            <th>上级编号</th>
+            <th>雇佣日期</th>
+            <th>基本工资</th>
+            <th>奖金</th>
+
+        </tr>
+        <%
+            List<Emp> emps = (ArrayList<Emp>) request.getAttribute("empInfo");
+            for (Emp emp : emps) {
+                pageContext.setAttribute("emp", emp);
+        %>
+
+        <tr>
+
+            <%--这里跟添加到list中的属性字段一致--%>
+            <td>${emp.DEPTNO} </td>
+            <td>${emp.EMPNO} </td>
+            <td>${emp.ENAME}</td>
+            <td>${emp.JOB}</td>
+            <td>${emp.MGR}</td>
+            <td>${emp.HIREDATE}</td>
+            <td>${emp.SAL}</td>
+            <td>${emp.COMM}</td>
+
+        </tr>
+        <%
+            }
+        %>
+    </table>
+</div>
+</body>
+</html>

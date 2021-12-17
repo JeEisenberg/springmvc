@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/myweb" />
     <file type="web" url="file://$PROJECT_DIR$/myweb1" />
+    <file type="web" url="file://$PROJECT_DIR$/myweb2" />
     <file type="web" url="file://$PROJECT_DIR$/myweb3" />
   </component>
   <component name="MavenProjectsManager">
@@ -11,13 +12,6 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/SpringMybati/pom.xml" />
-        <option value="$PROJECT_DIR$/myweb/pom.xml" />
-        <option value="$PROJECT_DIR$/myweb1/pom.xml" />
-      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">

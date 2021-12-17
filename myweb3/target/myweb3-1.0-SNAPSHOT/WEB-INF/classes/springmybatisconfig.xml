@@ -26,14 +26,14 @@
         <property name="dataSource" ref="dataSource"/>
     </bean>
     <tx:annotation-driven transaction-manager="transactionManager"/>
-    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" autowire="byName">
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <!--        配置数据源-->
         <property name="dataSource" ref="dataSource"/>
         <!--        配置mybatis核心配置文件位置-->
         <property name="configLocation" value="classpath:mybatisConfig.xml"/>
     </bean>
 
-    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate" autowire="byName">
+    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg index="0" ref="sqlSessionFactory"/>
         <constructor-arg value="SIMPLE"/>
     </bean>
