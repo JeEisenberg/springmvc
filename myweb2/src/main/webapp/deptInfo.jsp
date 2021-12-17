@@ -1,8 +1,9 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@page import="com.gavin.pojo.Emp" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
-
+<%@taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt_rt" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 <html>
 <head>
     <title>欢迎使用员工管理系统</title>
@@ -11,8 +12,8 @@
             border: 4px solid black;
             width: 70%;
 
-            margin: 0px auto;
-            mso-cellspacing: 0px;
+            margin: 0 auto;
+            mso-cellspacing: 0;
         }
 
         td {
@@ -43,28 +44,51 @@
             <th>奖金</th>
 
         </tr>
-        <%
+   <%--     <%
             List<Emp> emps = (ArrayList<Emp>) request.getAttribute("empInfo");
             for (Emp emp : emps) {
                 pageContext.setAttribute("emp", emp);
         %>
+--%>
+ <%--       <tr>
 
-        <tr>
-
-            <%--这里跟添加到list中的属性字段一致--%>
+            &lt;%&ndash;这里跟添加到list中的属性字段一致&ndash;%&gt;
             <td>${emp.DEPTNO} </td>
             <td>${emp.EMPNO} </td>
             <td>${emp.ENAME}</td>
             <td>${emp.JOB}</td>
             <td>${emp.MGR}</td>
-            <td>${emp.HIREDATE}</td>
+            <td><fmt:formatDate value="${emp.HIREDATE}" pattern="yyyy-MM-dd"/> </td>
             <td>${emp.SAL}</td>
             <td>${emp.COMM}</td>
 
-        </tr>
-        <%
+        </tr>--%>
+
+     <%--   <%
             }
         %>
+        --%>
+        <c:forEach items="${empInfo}" var="emp"  varStatus="empStatus">
+
+            <tr>
+
+                    <%--这里跟添加到list中的属性字段一致--%>
+                <td>${emp.DEPTNO} </td>
+                <td>${emp.EMPNO} </td>
+                <td>${emp.ENAME}</td>
+                <td>${emp.JOB}</td>
+                <td>${emp.MGR}</td>
+                <td><fmt:formatDate value="${emp.HIREDATE}" pattern="yyyy-MM-dd"/> </td>
+                <td>${emp.SAL}</td>
+                <td>${emp.COMM}</td>
+
+            </tr>
+
+
+
+        </c:forEach>
+
+
     </table>
 </div>
 </body>

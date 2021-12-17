@@ -25,4 +25,7 @@
         where d.deptno = #{deptno}
     </select>
 
+    
+    
+<!--    <select id="selectEmpByEmpInfo"  parameterType="dept"-->
 </mapper>
