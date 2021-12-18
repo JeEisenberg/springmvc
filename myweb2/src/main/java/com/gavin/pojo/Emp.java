@@ -2,13 +2,18 @@ package com.gavin.pojo;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * emp
- * @author 
+ * @author gavin
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Emp implements Serializable {
     private Integer EMPNO;
 
@@ -25,6 +30,8 @@ public class Emp implements Serializable {
     private Integer COMM;
 
     private Integer DEPTNO;
+
+    private  Dept dept;
 
     private static final long serialVersionUID = 1L;
 }

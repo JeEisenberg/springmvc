@@ -15,8 +15,14 @@
             <result column="COMM" jdbcType="INTEGER" property="COMM"/>
             <result column="DEPTNO" jdbcType="INTEGER" property="DEPTNO"/>
         </collection>
-
     </resultMap>
+<!--    <resultMap id="empAndDept" type="dept">
+        <id column="DEPTNO" jdbcType="INTEGER" property="deptno"/>
+
+
+
+
+    </resultMap>-->
 <cache type="org.mybatis.caches.ehcache.EhcacheCache"/>
     <select id="selectEmpBydeptno" resultMap="BaseResultMap" useCache="true">
         select d.*, e.*
@@ -25,7 +31,5 @@
         where d.deptno = #{deptno}
     </select>
 
-    
-    
-<!--    <select id="selectEmpByEmpInfo"  parameterType="dept"-->
+
 </mapper>

@@ -8,5 +8,4 @@ public interface DeptMapper {
 
     Dept selectEmpBydeptno(Integer deptno);
 
-  
 }

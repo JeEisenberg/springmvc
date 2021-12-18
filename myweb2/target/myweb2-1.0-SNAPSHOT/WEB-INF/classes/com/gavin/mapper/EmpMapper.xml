@@ -1,123 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.gavin.mapper.EmpMapper">
-  <resultMap id="BaseResultMap" type="com.gavin.pojo.Emp">
-    <id column="emp_EMPNO" jdbcType="INTEGER" property="EMPNO" />
-    <result column="emp_ENAME" jdbcType="VARCHAR" property="ENAME" />
-    <result column="emp_JOB" jdbcType="VARCHAR" property="JOB" />
-    <result column="emp_MGR" jdbcType="INTEGER" property="MGR" />
-    <result column="emp_HIREDATE" jdbcType="DATE" property="HIREDATE" />
-    <result column="emp_SAL" jdbcType="INTEGER" property="SAL" />
-    <result column="emp_COMM" jdbcType="INTEGER" property="COMM" />
-    <result column="emp_DEPTNO" jdbcType="INTEGER" property="DEPTNO" />
+  <resultMap id="BaseResultMap" type="emp">
+    <id column="EMPNO" jdbcType="INTEGER"  property="EMPNO" />
+    <result column="ENAME" jdbcType="VARCHAR" property="ENAME" />
+    <result column="JOB" jdbcType="VARCHAR" property="JOB" />
+    <result column="MGR" jdbcType="INTEGER" property="MGR" />
+    <result column="HIREDATE" jdbcType="DATE" property="HIREDATE" />
+    <result column="SAL" jdbcType="INTEGER" property="SAL" />
+    <result column="COMM" jdbcType="INTEGER" property="COMM" />
+    <result column="DEPTNO" jdbcType="INTEGER" property="DEPTNO" />
+    <association property="dept" javaType="dept">
+      <id column="deptno" property="deptno"/>
+      <result column="dname" property="dname"/>
+      <result column="loc" property="loc"/>
+    </association>
   </resultMap>
-  <sql id="Base_Column_List">
-    emp.EMPNO as emp_EMPNO, emp.ENAME as emp_ENAME, emp.JOB as emp_JOB, emp.MGR as emp_MGR, 
-    emp.HIREDATE as emp_HIREDATE, emp.SAL as emp_SAL, emp.COMM as emp_COMM, emp.DEPTNO as emp_DEPTNO
-  </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from emp emp
-    where emp.EMPNO = #{EMPNO,jdbcType=INTEGER}
+
+
+
+  <select id="selectEmpByEmpInfo"   resultMap="BaseResultMap">
+
+    select  e.*, d.* from emp e  , dept d
+    where e.empno= #{EMPNO}  AND e.ename = #{ENAME} and d.loc = #{dept.loc}
+
+
+
+
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from emp
-    where EMPNO = #{EMPNO,jdbcType=INTEGER}
-  </delete>
-  <insert id="insert" keyColumn="EMPNO" keyProperty="EMPNO" parameterType="com.gavin.pojo.Emp" useGeneratedKeys="true">
-    insert into emp (ENAME, JOB, MGR, 
-      HIREDATE, SAL, COMM, DEPTNO
-      )
-    values (#{ENAME,jdbcType=VARCHAR}, #{JOB,jdbcType=VARCHAR}, #{MGR,jdbcType=INTEGER}, 
-      #{HIREDATE,jdbcType=DATE}, #{SAL,jdbcType=INTEGER}, #{COMM,jdbcType=INTEGER}, #{DEPTNO,jdbcType=INTEGER}
-      )
-  </insert>
-  <insert id="insertSelective" keyColumn="EMPNO" keyProperty="EMPNO" parameterType="com.gavin.pojo.Emp" useGeneratedKeys="true">
-    insert into emp
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="ENAME != null">
-        ENAME,
-      </if>
-      <if test="JOB != null">
-        JOB,
-      </if>
-      <if test="MGR != null">
-        MGR,
-      </if>
-      <if test="HIREDATE != null">
-        HIREDATE,
-      </if>
-      <if test="SAL != null">
-        SAL,
-      </if>
-      <if test="COMM != null">
-        COMM,
-      </if>
-      <if test="DEPTNO != null">
-        DEPTNO,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="ENAME != null">
-        #{ENAME,jdbcType=VARCHAR},
-      </if>
-      <if test="JOB != null">
-        #{JOB,jdbcType=VARCHAR},
-      </if>
-      <if test="MGR != null">
-        #{MGR,jdbcType=INTEGER},
-      </if>
-      <if test="HIREDATE != null">
-        #{HIREDATE,jdbcType=DATE},
-      </if>
-      <if test="SAL != null">
-        #{SAL,jdbcType=INTEGER},
-      </if>
-      <if test="COMM != null">
-        #{COMM,jdbcType=INTEGER},
-      </if>
-      <if test="DEPTNO != null">
-        #{DEPTNO,jdbcType=INTEGER},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.gavin.pojo.Emp">
-    update emp
-    <set>
-      <if test="ENAME != null">
-        ENAME = #{ENAME,jdbcType=VARCHAR},
-      </if>
-      <if test="JOB != null">
-        JOB = #{JOB,jdbcType=VARCHAR},
-      </if>
-      <if test="MGR != null">
-        MGR = #{MGR,jdbcType=INTEGER},
-      </if>
-      <if test="HIREDATE != null">
-        HIREDATE = #{HIREDATE,jdbcType=DATE},
-      </if>
-      <if test="SAL != null">
-        SAL = #{SAL,jdbcType=INTEGER},
-      </if>
-      <if test="COMM != null">
-        COMM = #{COMM,jdbcType=INTEGER},
-      </if>
-      <if test="DEPTNO != null">
-        DEPTNO = #{DEPTNO,jdbcType=INTEGER},
-      </if>
-    </set>
-    where EMPNO = #{EMPNO,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.gavin.pojo.Emp">
-    update emp
-    set ENAME = #{ENAME,jdbcType=VARCHAR},
-      JOB = #{JOB,jdbcType=VARCHAR},
-      MGR = #{MGR,jdbcType=INTEGER},
-      HIREDATE = #{HIREDATE,jdbcType=DATE},
-      SAL = #{SAL,jdbcType=INTEGER},
-      COMM = #{COMM,jdbcType=INTEGER},
-      DEPTNO = #{DEPTNO,jdbcType=INTEGER}
-    where EMPNO = #{EMPNO,jdbcType=INTEGER}
-  </update>
+
 </mapper>

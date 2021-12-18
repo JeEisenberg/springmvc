@@ -31,7 +31,7 @@
 <body>
 
 <div>
-    <table cellpadding="0px" cellspacing="0px">
+    <table cellpadding="0" cellspacing="0">
 
         <tr>
             <th>部门号</th>
@@ -68,19 +68,19 @@
             }
         %>
         --%>
-        <c:forEach items="${empInfo}" var="emp"  varStatus="empStatus">
+        <c:forEach items="${deptInfo}" var="dept"  varStatus="deptStatus">
 
             <tr>
 
                     <%--这里跟添加到list中的属性字段一致--%>
-                <td>${emp.DEPTNO} </td>
-                <td>${emp.EMPNO} </td>
-                <td>${emp.ENAME}</td>
-                <td>${emp.JOB}</td>
-                <td>${emp.MGR}</td>
-                <td><fmt:formatDate value="${emp.HIREDATE}" pattern="yyyy-MM-dd"/> </td>
-                <td>${emp.SAL}</td>
-                <td>${emp.COMM}</td>
+                <td>${dept.DEPTNO} </td>
+                <td>${dept.EMPNO} </td>
+                <td>${dept.ENAME}</td>
+                <td>${dept.JOB}</td>
+                <td>${dept.MGR}</td>
+                <td><fmt:formatDate value="${dept.HIREDATE}" pattern="yyyy-MM-dd"/> </td>
+                <td>${dept.SAL}</td>
+                <td>${dept.COMM}</td>
 
             </tr>
 

@@ -35,8 +35,9 @@ public class DeptController {
             Dept dept = mapper.selectEmpBydeptno(deptno);
             List<Emp> empOfDept = dept.getEmpOfDept();
             ModelAndView model = new ModelAndView();
-            model.addObject("empInfo", empOfDept);
+            model.addObject("deptInfo", empOfDept);
             model.setViewName("deptInfo.jsp");
+            sqlSession.close();
             return model;
         }
         return null;
