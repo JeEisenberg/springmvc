@@ -8,4 +8,6 @@ public interface EmpMapper {
 
 
     Emp selectEmpByEmpInfo (Emp emp);
+
+    int delEmpByempno(Integer []ids);
 }

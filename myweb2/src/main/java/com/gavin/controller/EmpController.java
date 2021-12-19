@@ -7,6 +7,9 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -35,7 +38,6 @@ public class EmpController {
         System.out.println(emp.getEMPNO());
         System.out.println(emp.getENAME());
         System.out.println(emp.getDept().getLoc());
-
         SqlSession sqlSession = sqlSessionFactory.openSession();
         EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
         Emp emp1 = mapper.selectEmpByEmpInfo(emp);
@@ -45,5 +47,26 @@ modelAndView.setViewName( "empInfo.jsp");
         System.out.println(emp1);
         sqlSession.close();
         return modelAndView;
+    }
+
+
+
+
+    @RequestMapping("/toDel.do")
+    public String toDel(){
+        return "delemp.jsp";
+    }
+
+    @RequestMapping("/delEmp.do")
+    @Transactional(propagation = Propagation.REQUIRED ,isolation = Isolation.DEFAULT)
+    public Object delEmp(@RequestParam("ids") Integer []ids,Model model){
+        for (Integer id : ids) {
+            System.out.println(id);
+        }
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
+        int i = mapper.delEmpByempno(ids);
+model.addAttribute("delInfo",i);
+        return "delInfo.jsp";
     }
 }

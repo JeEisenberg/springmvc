@@ -7,33 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca424f6d-4256-4792-bd9b-119aa0d0f5b6" name="Default Changelist" comment="failed">
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/empInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/searchEmp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myweb2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/1234.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/delInfo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/delemp.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/controller/DeptController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/controller/EmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/controller/EmpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/mapper/DeptMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/mapper/DeptMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/mapper/EmpMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/mapper/EmpMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/pojo/Dept.java" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/pojo/Dept.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/pojo/Emp.java" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/pojo/Emp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/src/main/resources/com/gavin/mapper/DeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/src/main/resources/com/gavin/mapper/DeptMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myweb2/src/main/resources/com/gavin/mapper/EmpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/src/main/resources/com/gavin/mapper/EmpMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/src/main/webapp/deptInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/deptInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/controller/DeptController.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/controller/DeptController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/controller/EmpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/controller/EmpController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/mapper/DeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/mapper/DeptMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/mapper/EmpMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/mapper/EmpMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/mapper/EmpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/mapper/EmpMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/pojo/Dept.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/pojo/Dept.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/pojo/Emp.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/pojo/Emp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/controller/DeptController.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/controller/DeptController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/controller/EmpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/controller/EmpController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/DeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/DeptMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/EmpMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/EmpMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/EmpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/EmpMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/pojo/Dept.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/pojo/Dept.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/pojo/Emp.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/pojo/Emp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/deptInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/deptInfo.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,13 +66,13 @@
         <option value="web4.0" />
         <option value="ehcache" />
         <option value="spring-beans.schema" />
-        <option value="HTML File" />
         <option value="mybatisConfig" />
         <option value="jdbc" />
         <option value="sSpring_mybaicConfig" />
         <option value="Class" />
         <option value="log4j" />
         <option value="Jsp File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -133,19 +116,19 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Program Data\idea2019Data\SompleDemo\myweb3\src\main\webapp" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.gavin.controller" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Program Data\idea2019Data\SompleDemo\myweb2\src\main\webapp" />
       <recent name="D:\Program Data\idea2019Data\SompleDemo\myweb3\src\main\webapp" />
       <recent name="D:\Program Data\idea2019Data\SompleDemo\myweb\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gavin.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Program Data\idea2019Data\SompleDemo\myweb3\src\main\webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -422,6 +405,10 @@
       <workItem from="1639707800977" duration="1646000" />
       <workItem from="1639719442880" duration="22396000" />
       <workItem from="1639802558406" duration="81000" />
+      <workItem from="1639802658434" duration="1371000" />
+      <workItem from="1639814973833" duration="19000" />
+      <workItem from="1639879597219" duration="2228000" />
+      <workItem from="1639884052129" duration="2311000" />
     </task>
     <task id="LOCAL-00001" summary="删除了一些信息">
       <created>1639668037578</created>
@@ -437,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639727833823</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="failed">
+      <created>1639802893902</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1639802893902</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
