@@ -11,6 +11,7 @@
     </settings>
     <typeAliases>
          <package name="com.gavin"/>
+
     </typeAliases>
 
     <mappers>

@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 
 
        http://www.springframework.org/schema/beans/spring-beans.xsd
   http://www.springframework.org/schema/context
-       http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+       http://www.springframework.org/schema/context/spring-context.xsd 
+       http://www.springframework.org/schema/mvc 
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd
+       http://www.springframework.org/schema/tx 
+       http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <!--    引入外部配置文件-->
     <context:property-placeholder location="classpath:jdbc.properties"/>
@@ -41,5 +47,10 @@
     </bean>
 
     <context:component-scan base-package="com.gavin"/>
-
+    <mvc:annotation-driven/>
+    <!--    给静态资源放行-->
+    <!--    mapping url中的路径-->
+    <!--    location对应的据路径-&#45;&#45;项目中的资源路径-->
+    <mvc:resources mapping="/static/**" location="/static/"/>
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"/>
 </beans>

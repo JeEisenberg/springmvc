@@ -16,14 +16,21 @@
             <result column="DEPTNO" jdbcType="INTEGER" property="DEPTNO"/>
         </collection>
     </resultMap>
-<!--    <resultMap id="empAndDept" type="dept">
-        <id column="DEPTNO" jdbcType="INTEGER" property="deptno"/>
 
 
+    <insert id="addDept" parameterType="addDeptInfo">
+        insert into gavin.dept (deptno, dname, loc) values
+        <foreach collection="deptList" item="dept" separator=",">
 
+            (#{dept.deptno} ,#{dept.dname},#{dept.loc})
 
-    </resultMap>-->
-<cache type="org.mybatis.caches.ehcache.EhcacheCache"/>
+        </foreach>
+
+    </insert>
+    <!--    <resultMap id="empAndDept" type="dept">
+            <id column="DEPTNO" jdbcType="INTEGER" property="deptno"/>
+        </resultMap>-->
+    <cache type="org.mybatis.caches.ehcache.EhcacheCache"/>
     <select id="selectEmpBydeptno" resultMap="BaseResultMap" useCache="true">
         select d.*, e.*
         from Dept d

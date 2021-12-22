@@ -30,8 +30,6 @@ public class EmpController {
         return "searchEmp.jsp";
     }
 
-
-
     @RequestMapping("/searchEmpByDept.do")
     public Object searchEmpByDept(Emp emp) {
 
@@ -52,6 +50,7 @@ modelAndView.setViewName( "empInfo.jsp");
 
 
 
+
     @RequestMapping("/toDel.do")
     public String toDel(){
         return "delemp.jsp";
@@ -68,5 +67,11 @@ modelAndView.setViewName( "empInfo.jsp");
         int i = mapper.delEmpByempno(ids);
 model.addAttribute("delInfo",i);
         return "delInfo.jsp";
+    }
+
+
+    @RequestMapping("/toreq.do")
+    public String toRequest(){
+        return "toReq.jsp";
     }
 }

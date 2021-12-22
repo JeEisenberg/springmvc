@@ -1,32 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.gavin.mapper.EmpMapper">
-  <resultMap id="BaseResultMap" type="emp">
-    <id column="EMPNO" jdbcType="INTEGER"  property="EMPNO" />
-    <result column="ENAME" jdbcType="VARCHAR" property="ENAME" />
-    <result column="JOB" jdbcType="VARCHAR" property="JOB" />
-    <result column="MGR" jdbcType="INTEGER" property="MGR" />
-    <result column="HIREDATE" jdbcType="DATE" property="HIREDATE" />
-    <result column="SAL" jdbcType="INTEGER" property="SAL" />
-    <result column="COMM" jdbcType="INTEGER" property="COMM" />
-    <result column="DEPTNO" jdbcType="INTEGER" property="DEPTNO" />
-    <association property="dept" javaType="dept">
-      <id column="deptno" property="deptno"/>
-      <result column="dname" property="dname"/>
-      <result column="loc" property="loc"/>
-    </association>
-  </resultMap>
+    <resultMap id="BaseResultMap" type="emp">
+        <id column="EMPNO" jdbcType="INTEGER" property="EMPNO"/>
+        <result column="ENAME" jdbcType="VARCHAR" property="ENAME"/>
+        <result column="JOB" jdbcType="VARCHAR" property="JOB"/>
+        <result column="MGR" jdbcType="INTEGER" property="MGR"/>
+        <result column="HIREDATE" jdbcType="DATE" property="HIREDATE"/>
+        <result column="SAL" jdbcType="INTEGER" property="SAL"/>
+        <result column="COMM" jdbcType="INTEGER" property="COMM"/>
+        <result column="DEPTNO" jdbcType="INTEGER" property="DEPTNO"/>
+        <association property="dept" javaType="dept">
+            <id column="deptno" property="deptno"/>
+            <result column="dname" property="dname"/>
+            <result column="loc" property="loc"/>
+        </association>
+    </resultMap>
+    <delete id="delEmpByempno" >
+
+        delete from gavin.emp where EMPNO in
+        <foreach collection="array" index="index"
+                 item="item" open="(" separator="," close=")">
+          #{item}
+        </foreach>
 
 
-
-  <select id="selectEmpByEmpInfo"   resultMap="BaseResultMap">
-
-    select  e.*, d.* from emp e  , dept d
-    where e.empno= #{EMPNO}  AND e.ename = #{ENAME} and d.loc = #{dept.loc}
+    </delete>
 
 
+    <select id="selectEmpByEmpInfo" resultMap="BaseResultMap">
+
+        select e.*, d.*
+        from emp e,
+             dept d
+        where e.empno = #{EMPNO}
+          AND e.ename = #{ENAME}
+          and d.loc = #{dept.loc}
 
 
-  </select>
+    </select>
 
 </mapper>
