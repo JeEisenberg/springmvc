@@ -1,0 +1,21 @@
+#devp
+{
+    color:red;
+    text-align:center;
+    font-size: 15px;
+    width: 80%;
+    background-image:url("../img/jianjiacangcang.jpeg");
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+h1{
+    color: green;
+    font-size: 20px;
+    text-align:center;
+}
+img{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}

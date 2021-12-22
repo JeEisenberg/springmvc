@@ -6,60 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca424f6d-4256-4792-bd9b-119aa0d0f5b6" name="Default Changelist" comment="success">
-      <change afterPath="$PROJECT_DIR$/.idea/templateLanguages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/controller/userController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/pojo/addDeptInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/resources/com/gavin/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/resources/com/gavin/mapper/addDeptInfoMappper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/WEB-INF/1234.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/addDeptInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/addSuccessInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/deptJson.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/jsonData.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/static/css/devc.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/static/img/jianjiacangcang.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/static/js/jquery-3.5.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/static/js/jquery-3.5.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/testapp.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/toReq.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/userTest.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/controller/DeptController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/controller/EmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/controller/EmpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/mapper/DeptMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/src/main/java/com/gavin/mapper/DeptMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/src/main/resources/applicationConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/src/main/resources/applicationConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/src/main/resources/com/gavin/mapper/DeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/src/main/resources/com/gavin/mapper/DeptMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/src/main/resources/mybatisConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/src/main/resources/mybatisConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/src/main/webapp/1234.html" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/1234.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/src/main/webapp/searchEmp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/src/main/webapp/searchEmp.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/classes/applicationConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/classes/applicationConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/controller/DeptController.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/controller/DeptController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/controller/EmpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/controller/EmpController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/mapper/DeptMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/mapper/DeptMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/mapper/DeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/mapper/DeptMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/mapper/EmpMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/mapper/EmpMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/mapper/EmpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/classes/com/gavin/mapper/EmpMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/classes/mybatisConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/classes/mybatisConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/applicationConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/applicationConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/controller/DeptController.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/controller/DeptController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/controller/EmpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/controller/EmpController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/DeptMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/DeptMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/DeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/DeptMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/EmpMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/EmpMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/EmpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/com/gavin/mapper/EmpMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/mybatisConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb2/target/myweb2-1.0-SNAPSHOT/WEB-INF/classes/mybatisConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb3/src/main/resources/springmybatisconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myweb3/src/main/resources/springmybatisconfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ca424f6d-4256-4792-bd9b-119aa0d0f5b6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -471,7 +418,7 @@
       <workItem from="1640069210122" duration="4844000" />
       <workItem from="1640075857233" duration="12809000" />
       <workItem from="1640138300571" duration="2496000" />
-      <workItem from="1640141105845" duration="14730000" />
+      <workItem from="1640141105845" duration="15115000" />
     </task>
     <task id="LOCAL-00001" summary="删除了一些信息">
       <created>1639668037578</created>
@@ -501,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639887284393</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="success">
+      <created>1640158474063</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1640158474063</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
