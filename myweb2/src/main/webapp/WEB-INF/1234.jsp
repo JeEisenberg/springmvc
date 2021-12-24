@@ -8,9 +8,18 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html  lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
 
+<script>
+    function func() {
+        alert("Success");
+
+    }
+
+</script>
+<body>
+<input type="button" value="点我呀" onclick="func()">
 </body>
 </html>

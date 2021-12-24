@@ -27,7 +27,7 @@ public class EmpController {
 
 @RequestMapping("/toSearch.do")
     public String toSearch(){
-        return "searchEmp.jsp";
+        return "/dataOne/searchEmp.jsp";
     }
 
     @RequestMapping("/searchEmpByDept.do")
@@ -41,7 +41,7 @@ public class EmpController {
         Emp emp1 = mapper.selectEmpByEmpInfo(emp);
 ModelAndView modelAndView= new ModelAndView();
 modelAndView.addObject("empinfo",emp1);
-modelAndView.setViewName( "empInfo.jsp");
+modelAndView.setViewName("/dataOne/empInfo.jsp");
         System.out.println(emp1);
         sqlSession.close();
         return modelAndView;
@@ -53,7 +53,7 @@ modelAndView.setViewName( "empInfo.jsp");
 
     @RequestMapping("/toDel.do")
     public String toDel(){
-        return "delemp.jsp";
+        return "/dataOne/delemp.jsp";
     }
 
     @RequestMapping("/delEmp.do")
@@ -66,12 +66,12 @@ modelAndView.setViewName( "empInfo.jsp");
         EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
         int i = mapper.delEmpByempno(ids);
 model.addAttribute("delInfo",i);
-        return "delInfo.jsp";
+        return "/dataOne/delInfo.jsp";
     }
 
 
     @RequestMapping("/toreq.do")
     public String toRequest(){
-        return "toReq.jsp";
+        return "/dataOne/toReq.jsp";
     }
 }

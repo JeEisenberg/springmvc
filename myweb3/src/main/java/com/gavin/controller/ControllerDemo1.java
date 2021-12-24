@@ -1,8 +1,6 @@
 package com.gavin.controller;
 
-import com.gavin.mapper.BookstoreMapper;
 import com.gavin.mapper.UserMapper;
-import com.gavin.pojo.Bookstore;
 import com.gavin.pojo.User;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -17,8 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-
-import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @Transactional(propagation = Propagation.REQUIRED, isolation = Isolation.DEFAULT)
@@ -56,15 +52,15 @@ public class ControllerDemo1 {
     }
 
     @RequestMapping("/RegisterUser.do")
-    public Object regUser(User user) {
+    public Object regUser(User User) {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
-        System.out.println(user.getName());
-        System.out.println(user);
-        mapper.addUser(user);
+        System.out.println(User.getName());
+        System.out.println(User);
+        mapper.addUser(User);
         ModelAndView modelAndView=new ModelAndView();
-        modelAndView.addObject("user",user.getName());
+        modelAndView.addObject("user", User.getName());
         modelAndView.setViewName("welcome.jsp");
         return modelAndView;
     }

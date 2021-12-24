@@ -39,7 +39,7 @@ public class DeptController {
             List<Emp> empOfDept = dept.getEmpOfDept();
             ModelAndView model = new ModelAndView();
             model.addObject("deptInfo", empOfDept);
-            model.setViewName("deptInfo.jsp");
+            model.setViewName("/dataOne/deptInfo.jsp");
             sqlSession.close();
             return model;
         }
@@ -62,7 +62,7 @@ public class DeptController {
 
     @RequestMapping("/toAdd.do")
     public String toAdd(){
-        return "addDeptInfo.jsp";
+        return "/dataOne/addDeptInfo.jsp";
     }
 
 
@@ -80,6 +80,6 @@ public class DeptController {
         DeptMapper mapper = sqlSession.getMapper(DeptMapper.class);
         int i = mapper.addDept(deptList);
         model.addAttribute("num",i);
-        return "addSuccessInfo.jsp";
+        return "/dataOne/addSuccessInfo.jsp";
     }
 }

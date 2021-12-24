@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserMapper {
 
-    int addUser(User user);
+    int addUser(User User);
 
 }

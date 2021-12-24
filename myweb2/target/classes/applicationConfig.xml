@@ -5,8 +5,6 @@
        xmlns:tx="http://www.springframework.org/schema/tx"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-
-
        http://www.springframework.org/schema/beans/spring-beans.xsd
   http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd 
@@ -31,6 +29,7 @@
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>
+    <!--    开启事务注解-->
     <tx:annotation-driven/>
 
 
@@ -48,9 +47,48 @@
 
     <context:component-scan base-package="com.gavin"/>
     <mvc:annotation-driven/>
+
+    <!--
+
+        模板过滤器
+     &lt;!&ndash;   <mvc: interceptor>中的子元素必须按照上述代码的配置顺序进行编写，
+        即<mvc: mapping…/>→<mvc: exclude-mapping…/>→<bean…/>的顺序，否则文件会报错。
+    &ndash;&gt;
+        <mvc:interceptors>
+    &lt;!&ndash;        配置拦截器  全局拦截器 拦截所有的请求&ndash;&gt;
+            <bean class="com.gavin.InterCeptor.AllInterceptor"/>
+            <mvc:interceptor>
+    &lt;!&ndash;            配置作用范围&ndash;&gt;
+                <mvc:mapping path="/dataOne/**"/>
+    &lt;!&ndash;            配置例外情况 如果配置了,那么path不能为空&ndash;&gt;
+                <mvc:exclude-mapping path="/interceptorDemo/**"/>
+    &lt;!&ndash;            对匹配路径的请求才拦截&ndash;&gt;
+                <bean class="com.gavin.InterCeptor.EmpInterceptor"/>
+            </mvc:interceptor>
+
+            <mvc:interceptor>
+                <mvc:mapping path="/toAdd.do"/>
+               <bean class="com.gavin.InterCeptor.DeptInterceptor"/>
+            </mvc:interceptor>
+        </mvc:interceptors>
+
+    -->
+
+
+    <mvc:interceptors>
+        <!--        全局拦截器-->
+        <!--        <bean  class="com.gavin.InterCeptor.UserInterceptor"/>-->
+        <mvc:interceptor>
+            <!--            局部拦截器-->
+            <mvc:mapping path="/**"/>
+            <bean class="com.gavin.InterCeptor.UserInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
     <!--    给静态资源放行-->
     <!--    mapping url中的路径-->
     <!--    location对应的据路径-&#45;&#45;项目中的资源路径-->
+
+
     <mvc:resources mapping="/static/**" location="/static/"/>
-<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"/>
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"/>
 </beans>
