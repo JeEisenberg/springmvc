@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="commons-fileupload-1.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/myweb2/src/main/webapp/WEB-INF/lib/commons-fileupload-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/myweb2/src/main/webapp/WEB-INF/lib/commons-io-2.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/myweb2/src/main/webapp/WEB-INF/lib/jersey-client-1.19.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
